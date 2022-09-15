@@ -6,7 +6,7 @@ A Node.js command-line application that takes in information about employees on 
 
 ## Usage
 
-The following video shows the application's appearance and functionality:
+The following shows the application's appearance and functionality:
 
 
 
