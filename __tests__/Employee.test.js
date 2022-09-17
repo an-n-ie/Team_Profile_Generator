@@ -1,4 +1,5 @@
 const Employee = require("../lib/Employee")
+
 describe("Employee", ()=>{
     describe("test Employee's properties", ()=>{
         it("test all properties", ()=>{
