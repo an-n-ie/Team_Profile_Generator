@@ -3,19 +3,19 @@ const Employee = require("../lib/Employee")
 describe("Employee", ()=>{
     describe("test Employee's properties", ()=>{
         it("test all properties", ()=>{
-            const employee = new Employee('Annie',1,'annie@gmail.com')
-            expect(employee.name).toEqual('Annie')
+            const employee = new Employee('Emp1',1,'Emp1@gmail.com')
+            expect(employee.name).toEqual('Emp1')
             expect(employee.id).toEqual(1)
-            expect(employee.email).toEqual('annie@gmail.com')
+            expect(employee.email).toEqual('Emp1@gmail.com')
         })
 
     }) 
     describe("test Employee's methods", ()=>{
         it("test all methods", ()=>{
-            const employee = new Employee('Will',2,'will@gmail.com')
-            expect(employee.getName()).toEqual('Will')
+            const employee = new Employee('Emp2',2,'Emp2@gmail.com')
+            expect(employee.getName()).toEqual('Emp2')
             expect(employee.getId()).toEqual(2)
-            expect(employee.getEmail()).toEqual('will@gmail.com')
+            expect(employee.getEmail()).toEqual('Emp2@gmail.com')
             expect(employee.getRole()).toEqual('Employee')
         })
 
