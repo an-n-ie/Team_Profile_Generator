@@ -110,12 +110,12 @@ function confirmMore(){
 function addEmployee(){
     inquirer.prompt([{
         type:"list",
-        message:"Do you want to add engineer or intern?",
+        message:"Do you want to add an engineer or intern?",
         choices:["Engineer","Intern"],
-        name:"eninSelection"
+        name:"selection"
     }])
     .then(response =>{
-        if(response.eninSelection === "Engineer"){
+        if(response.selection === "Engineer"){
             addEngineer()
         }
         else(){
@@ -123,10 +123,10 @@ function addEmployee(){
         }
     })
 }
+// prompt questions and adding it to employeeArray using push
 function addEngineer(){
     inquirer.prompt(engineerQuestions)
     .then(response =>{
-        // create new instance of engineer and add it to employeeArray using push
         const engineer=new Engineer(
             response.engineerName,
             response.engineerId,
@@ -140,7 +140,6 @@ function addEngineer(){
 function addIntern(){
     inquirer.prompt(internQuestions)
     .then(response =>{
-        // create new instance of intern and add it to employeeArray using push
         const intern=new Intern(
             response.internName,
             response.internId,
@@ -153,6 +152,8 @@ function addIntern(){
 }
 function createHMTL(){
  console.log(employeeArray)
+ 
+//  for loop
 }
 
 init ()
