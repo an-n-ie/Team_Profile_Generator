@@ -4,7 +4,9 @@ const Manager= require("./lib/Manager")
 const Engineer = require("./lib/Engineer")
 const Intern = require("./lib/Intern")
 const generateHTML= require("./src/generateHTML")
-
+const managerCard=require("./src/managerHTML")
+const engineerCard=require("./src/engineerHTML")
+const internCard=require("./src/internHTML")
 const employeeArray=[]
 
 // questions for Man, Eng, and Int
@@ -118,12 +120,12 @@ function addEmployee(){
         if(response.selection === "Engineer"){
             addEngineer()
         }
-        else(){
+        else{
             addIntern()
         }
     })
 }
-// prompt questions and adding it to employeeArray using push
+// Question prompts and adding it to employeeArray using push
 function addEngineer(){
     inquirer.prompt(engineerQuestions)
     .then(response =>{
@@ -152,8 +154,20 @@ function addIntern(){
 }
 function createHMTL(){
  console.log(employeeArray)
- 
-//  for loop
+ let cards= ""
+
+ for(let i=0; i<employeeArray.length; i++){
+    if(employeeArray[i].getRole()==="Manager"){
+        cards=cards+managerCard(employeeArray[i])
+    }
+    else if(employeeArray[i].getRole()==="Engineer"){
+        cards=cards+engineerCard(employeeArray[i])
+    }
+    else(employeeArray[i].getRole()==="Intern"){
+        cards=cards+internCard(employeeArray[i])
+    }
+ }
+ fs.writeFileSync("./dist/team.html", generateHTML(cards))
 }
 
 init ()
