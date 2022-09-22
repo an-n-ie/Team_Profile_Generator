@@ -8,8 +8,9 @@ A Node.js command-line application that takes in information about employees on 
 
 The following shows the application's appearance and functionality:
 
+![Team-Profile](./Assets/team-gen.png)
 
-
+https://drive.google.com/file/d/1ICE93FvQe1zFKUDQ-B5xIkaEPMaOyGP1/view
 ## Credits
 
 
