@@ -3,7 +3,7 @@ function managerHTML(manager){
     <div class="row d-flex justify-content-center">
     <div class="col-sm-4 my-3">
       <div class="card">
-        <div class="card-body">
+        <div class="card-body bg-info bg-opacity-75">
           <h5 class="card-title">${manager.name}</h5>
           <p class="card-text">Manager</p>
           <ul class="list-group list-group-flush">

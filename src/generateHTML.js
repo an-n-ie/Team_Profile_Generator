@@ -10,7 +10,7 @@ function generateHTML(cards) {
     <title>Team Profile Generator</title>
 </head>
 <body>
-    <div class="h-100 text-center text-white p-3 bg-danger border"> 
+    <div class="h-100 text-center text-white p-3 bg-warning  border"> 
         <h2>My Team</h2>
     </div>
     <div class="container">
