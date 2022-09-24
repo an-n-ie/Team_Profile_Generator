@@ -8,12 +8,13 @@ A Node.js command-line application that takes in information about employees on 
 
 The following shows the application's appearance and functionality:
 
+https://drive.google.com/file/d/1ICE93FvQe1zFKUDQ-B5xIkaEPMaOyGP1/view
+
 ![Team-Profile](./Assets/team-gen.png)
 
-https://drive.google.com/file/d/1ICE93FvQe1zFKUDQ-B5xIkaEPMaOyGP1/view
 ## Credits
 
-
+https://getbootstrap.com/
 
 ## Contact
 
